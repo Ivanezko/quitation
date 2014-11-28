@@ -6,7 +6,7 @@
         version   = "0.0.0.1">
 
     <name>Movie quotes</name>
-    <preference name="phonegap-version" value="3" />
+    <preference name="phonegap-version" value="3.6.3" />
 
     <description>
         Guess the quotation game
