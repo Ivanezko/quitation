@@ -27,18 +27,27 @@
         <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css">
         <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
+        <script>
+            function settingsPanel() {
+                console.log('show settings');
+                $( "#settingspanel" ).trigger( "updatelayout" );
+            }
+
+        </script>
+
+
     </head>
     <body>
+
+
+
 
         <div data-role="page">
             <div data-role="header"><h1>Page Title</h1></div>
 
             <div role="main" class="ui-content">
-                <!-- Add your site or application content here -->
                 <h1>цитаты</h1>
-                <a href="#game">начать</a>
-                <a href="http://bigmir.net">bigmir</a>
-                <a href="http://m.bigmir.net">m.bigmir</a>
+                <a href="#p1">p1</a>
             </div>
             <div data-role="footer"><h1>Page footer</h1></div>
 
@@ -50,6 +59,24 @@
                 game here
             </div>
         </div>
+
+
+        <div data-role="page" id="p1">
+            <div data-role="header"><h1>Цитаты йопта</h1><a href="#settingsPanel" class="ui-btn ui-icon-gear ui-btn-icon-left ui-shadow ui-corner-all ui-btn-icon-notext"></a></div>
+
+            <div data-role="panel" id="settingsPanel">
+                settings!!!
+            </div><!-- /panel -->
+
+            <div role="main" class="ui-content">
+                <h3>Все в норме? Моей колонии роботов нужны здоровые рабы.</h3>
+                <button class="ui-btn">Остров проклятых</button>
+                <button class="ui-btn">Новый кинотеатр "Парадизо"</button>
+                <button class="ui-btn">Вечное сияние чистого разума</button>
+                <button class="ui-btn">Пи</button>
+            </div>
+        </div>
+
 
 
     </body>
